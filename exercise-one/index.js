@@ -4,6 +4,10 @@ btn.addEventListener('click',function(){
   var a = prompt("ingresa el primer valor")
   var b = prompt("ingresa el segundo valor")
   mekeNumbers = () => {
+    /*
+    * Corregir!!
+    * Si se ingresa 2 valores de tipo string retorna NaN
+    */
     if((typeof(a) === 'string') && (typeof(b) === 'string')){
       a = parseInt(a)
       b = parseInt(b)

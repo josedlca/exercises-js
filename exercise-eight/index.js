@@ -1,5 +1,7 @@
 var btn = document.getElementById('here')
-
+/**
+ * Los if podrian refactorizarse
+ */
 btn.addEventListener('click',function(){
   var x = prompt("ingresa el primer valor")
   var y = prompt("ingresa el segundo valor")

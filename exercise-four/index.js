@@ -4,6 +4,10 @@ rangeCheck = () => {
     var salir = 'n'
     var numeros = []
 
+    /**
+     * El comportamiento es algo confuso talves colocar un contador q cuando llegue hasta 3 el programa continue.
+     * Agrega mas comentarios o nombre de forma coherente a tus variables para poder entender mejor que hace tu programa
+     */
     while (salir == 'n') {
         numero = prompt('ingresa un número')
         if (numero != null) {

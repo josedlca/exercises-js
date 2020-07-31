@@ -1,8 +1,14 @@
 var btn = document.getElementById('here')
-
+/**
+ * Corregir: la validacion no funciona
+ */
 absoluteDiference = () => {
   var a = prompt('Ingresa un numero')
-  if((typeof(a) === 'string')){
+  if(typeof(a) === 'string'){ // innecesarios parentesis
+    /**
+     * sobre escribir la misma variable puede ser confueso
+     * Corregir: Cuando se ingresa caracteres especiales el programa retorna NaN 
+     */
     a = parseInt(a)
     if (a > 51) {
       var r = (a - 51) * 3
@@ -15,6 +21,7 @@ absoluteDiference = () => {
       return console.log(r)
     }
   }else {
+    // esta condicon jamas se ejecuta por que promt transforma todo a string!
     console.log('error : introdujo caracteres que no son numeros')
   }
 }

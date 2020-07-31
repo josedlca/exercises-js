@@ -1,5 +1,7 @@
 var btn = document.getElementById('here')
-
+/**
+ * Corregir: El programa detecta q los numeros 1,2 y 3 estan en el array pero no evalua que la secuencia 1,2,3 esta dentro del array lo cual es el requerimiento
+ */
 checkSequence = () => {
     var salir = 'n'
     var numeros = []
