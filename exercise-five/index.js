@@ -6,17 +6,21 @@ lastNumbers = () => {
     a = parseInt(a)
     b = parseInt(b)
     console.log(a,b)
+
+    // La instruccion "else" era inecesaria que q si la condicional es true el programa terminaria con la instruccion "return"
     if((a < 0) || (b < 0)){
         return console.log('Ingreso letras o un negativo')
-    }else{
-        var ldo = a % 10
-        var ldt = b % 10
-        if(ldo === ldt){
-            return console.log(`Los ultimos digitos de ambos son iguales ${ldo} y ${ldt}`)
-        }else{
-            return console.log(`Los ultimos digitos de ambos son diferentes  ${ldo} y ${ldt}`)
-        }
     }
+
+    var ldo = a % 10
+    var ldt = b % 10
+    if(ldo === ldt){
+        return console.log(`Los ultimos digitos de ambos son iguales ${ldo} y ${ldt}`)
+    }
+    
+    return console.log(`Los ultimos digitos de ambos son diferentes  ${ldo} y ${ldt}`)
+    
+    
 }
 
 btn.addEventListener('click',function(){

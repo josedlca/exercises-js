@@ -7,6 +7,9 @@ multiploNewTest= () => {
     if(a > 0){
         var m3 = a % 3
         var m7 = a % 7
+        /**
+         * La condicional dentro de la instruccion switch deberia evaluar una condicional
+         */
         switch(true){
             case (m7 > 0) && (m3 > 0):
                 return console.log(`${a} no es un multiplo de 3 ni de 7`)
